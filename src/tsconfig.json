@@ -1,0 +1,13 @@
+{
+  "extends"        : "../tsconfig.json",
+  "compilerOptions": {},
+  "include"        : [
+    "../declarations/**/*",
+    "**/*"
+  ],
+  "exclude"        : [
+    "**/node_modules",
+    "**/.*",
+    "**/~*"
+  ]
+}

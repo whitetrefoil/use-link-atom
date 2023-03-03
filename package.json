@@ -1,0 +1,61 @@
+{
+  "name": "@whitetrefoil/use-link-atom",
+  "version": "0.1.0",
+  "type": "module",
+  "author": "WhiteTrefoil <whitetrefoil@gmail.com>",
+  "license": "Unlicense",
+  "description": "A tiny helper to link Jotai's useAtom / useSetAtom & events.",
+  "keywords": [
+    "react",
+    "hook",
+    "jotai",
+    "atom"
+  ],
+  "files": [
+    "lib"
+  ],
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "main": "./lib/index.js",
+  "scripts": {
+    "prepack": "yarn build",
+    "build": "rimraf lib && tsc -p src/tsconfig.json --noEmit false",
+    "test": "rimraf test_results && jest --no-cache; eslint src tests",
+    "watch": "yarn build -w"
+  },
+  "engines": {
+    "node": ">=16.17.0"
+  },
+  "dependencies": {
+    "tslib": "^2.5.0"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^14.0.0",
+    "@types/jest": "^29.4.0",
+    "@types/node": "^18.14.5",
+    "@types/react": "^18.0.28",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "@typescript-eslint/parser": "^5.54.0",
+    "@whitetrefoil/eslint-config": "^0.33.0",
+    "eslint": "^8.35.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "jest": "^29.4.3",
+    "jest-environment-jsdom": "^29.4.3",
+    "jotai": "^2.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rimraf": "^4.2.0",
+    "ts-jest": "^29.0.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  },
+  "peerDependencies": {
+    "@types/react": ">=17",
+    "jotai": ">=2",
+    "react": ">=17"
+  },
+  "packageManager": "yarn@3.4.1"
+}
