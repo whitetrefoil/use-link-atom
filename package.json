@@ -1,6 +1,6 @@
 {
   "name": "@whitetrefoil/use-link-atom",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "author": "WhiteTrefoil <whitetrefoil@gmail.com>",
   "license": "Unlicense",
@@ -15,9 +15,9 @@
     "lib"
   ],
   "exports": {
-    ".": "./lib/index.js"
+    ".": "./lib/main.js"
   },
-  "main": "./lib/index.js",
+  "main": "./lib/main.js",
   "scripts": {
     "prepack": "yarn build",
     "build": "rimraf lib && tsc -p src/tsconfig.json --noEmit false",
